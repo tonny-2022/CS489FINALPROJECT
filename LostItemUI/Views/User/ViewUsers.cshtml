@@ -1,0 +1,40 @@
+﻿@{
+@model List<LostItemUI.dto.UserResponseDTO>
+
+}
+
+<h1>List of users.</h1>
+<div class="d-flex justify-content-end">
+	<a class="btn btn-primary" asp-controller="User" asp-action="AddUser">Add User</a>
+
+</div>
+<table class="table table-bordered">
+	<thead>
+		<tr>
+			<th>Id</th>
+			<th>FirstName</th>
+			<th>LastName</th>
+			<th>Location</th>
+			<th>UserName</th>
+			<th>PhoneNumber<th>
+		</tr>
+		<tbody>
+			@foreach(var user in Model)
+			{
+				<tr>
+				    <td>@(user.Id ?? "N/A")</td>
+					<td>@(user.FirstName  ?? "N/A")</td>
+					<td>@(user.LastName ?? "N/A")</td>
+				    <td>@(user.Location ?? "N/A")</td>
+					<td>@user.UserName)</td>
+				    <td>@(user.PhoneNumber ?? "N/A")</td>
+					<td>
+					  <a class="btn btn-light" asp-controller="User" asp-action="EditUser" asp-route-userId="@user.Id">Edit</a>
+					</td>
+				</tr>
+			}
+		</tbody>
+
+	</thead>
+
+</table>

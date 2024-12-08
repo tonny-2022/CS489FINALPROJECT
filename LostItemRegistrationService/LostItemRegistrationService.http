@@ -1,0 +1,6 @@
+@LostItemRegistrationService_HostAddress = http://localhost:5037
+
+GET {{LostItemRegistrationService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

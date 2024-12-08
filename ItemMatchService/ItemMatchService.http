@@ -1,0 +1,6 @@
+@ItemMatchService_HostAddress = http://localhost:5070
+
+GET {{ItemMatchService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

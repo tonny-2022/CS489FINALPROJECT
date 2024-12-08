@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LostItemRegistrationService", "LostItemRegistrationService.csproj", "{CAD743B5-EDA9-4812-BB48-ACCB4DD7DCBA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CAD743B5-EDA9-4812-BB48-ACCB4DD7DCBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAD743B5-EDA9-4812-BB48-ACCB4DD7DCBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAD743B5-EDA9-4812-BB48-ACCB4DD7DCBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAD743B5-EDA9-4812-BB48-ACCB4DD7DCBA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E87EFEC5-D1F2-4D6C-ABDD-9E14640DA789}
+	EndGlobalSection
+EndGlobal

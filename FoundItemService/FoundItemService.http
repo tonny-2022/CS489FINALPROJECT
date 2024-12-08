@@ -1,0 +1,6 @@
+@FoundItemService_HostAddress = http://localhost:5284
+
+GET {{FoundItemService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,42 @@
+﻿ @model IEnumerable<LostItemUI.dto.LostItemDTO>
+
+@if (Model == null || !Model.Any())
+{
+    <div>No products availale</div>
+
+}
+else
+{
+    <form>
+        <div class="container row">
+            @foreach (var item in Model)
+            {
+                <div class="col-4">
+                    <div class="p-0 my-3 border rounded">
+                        <div class="card">
+                            <h3 class="card-title text-white-50 text-center py-2">@item.Category</h3>
+                            <img src="@item.PhotoURL" class="card-img-top">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between py-2">
+                                    <span class="text-danger" style="font-size:20px;">@string.Format("{0:c}", item.LocationLost)</span>
+                                    <span class="badge bg-warning text-white p-2">@item.status</span>
+                                </div>
+                                <p class="card-text">@Html.Raw(item.Description)</p>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <a class="btn btn-success form-control" asp-action="ItemDetail" asp-route-productId="@item.LostId">View Details</a>
+                                    </div>
+
+                                    <div class="col-sm-6">
+                                        <a class="btn btn-success form-control" asp-action="ItemDetail" asp-route-productId="@item.LostId">Claim Item</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </form>
+}
+

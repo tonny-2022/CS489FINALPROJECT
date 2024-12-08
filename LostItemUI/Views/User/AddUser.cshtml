@@ -1,0 +1,55 @@
+﻿
+@{
+	@model LostItemUI.Models.AddUserModel 
+}
+<div class="container mt-5">
+<h3 class="mt-3 text-center mb-4">Add New User</h3>
+<form method="post">
+
+<div class="row">
+	 <div class="mt-3 col-md-6">
+		<label class="form-label">First Name:</label>
+		<input type="text" class="form-control" asp-for="FirstName" />
+	</div>
+		<div class="mt-3 col-md-6">
+		<label class="form-label">Last Name:</label>
+		<input type="text" class="form-control" asp-for="LastName" />
+	</div>
+ </div>
+<div class="row">
+			<div class="mt-3 col-md-6">
+		<label class="form-label">Location:</label>
+		<input type="text" class="form-control"  asp-for="Location"/>
+	</div>
+
+			<div class="mt-3 col-md-6">
+				<label class="form-label">Phone Number:</label>
+		<input type="text" class="form-control"  asp-for="PhoneNumber"/>
+	</div>
+</div>
+
+<div class="row">
+
+	<div class="mt-3 col-md-6">
+		<label class="form-label">Email/Username:</label>
+		<input type="text" class="form-control" asp-for="UserName" />
+	</div>
+		<div class="mt-3 col-md-6">
+		<label class="form-label">Password:</label>
+		<input type="text" class="form-control" asp-for="Password" />
+	</div>
+  </div>
+
+  <div class="mt-4 col-md-12">
+		<textarea class="form-control" rows="4" asp-for="Roles" placeholder="Enter roles here..."></textarea>
+
+  </div>
+ 
+	<div class="mt-3">
+		<button type="submit" class="btn btn-primary"> Add user</button>
+
+	</div>
+	
+
+</form>
+</div>
